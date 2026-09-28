@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 
 products = requests.get("https://fakestoreapi.com/products").json()
-
+print(products)
 print(f"There are {len(products)} products in the 'YoungFolks' store.")
 
 for p in products:
